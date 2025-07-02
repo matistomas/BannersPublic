@@ -44,7 +44,8 @@ body, html {
     left: 21px;
     width: 107px;
     height: 107px;
-    animation: pulse 1s infinite ease-in-out;
+    /*animation: pulse 1s infinite ease-in-out;
+    animation-iteration-count: 3;*/
 }
 .logo {
     position: absolute;
@@ -120,6 +121,7 @@ body, html {
 }
 #clickTag:hover .cta {
     background-color: #9c2aa0;
+    animation: btnZoom 0.3s ease-out forwards;
 }
 #clickTag:hover .cta .cls-1 {
     fill: #fff;
@@ -162,5 +164,11 @@ body, html {
     to {
         opacity: 1;
         transform: scaleX(1);
+    }
+}
+
+@keyframes btnZoom {
+    to {
+        transform: scale(1.1);
     }
 }
