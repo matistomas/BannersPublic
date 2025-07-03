@@ -64,6 +64,7 @@ body, html {
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: 50ms;
+    /* animation: copy-in 1000ms cubic-bezier(0, 0, .145, .992) 1000ms, copy-out 500ms linear 28000ms; */
 }
 .hl2 {
     position: absolute;
