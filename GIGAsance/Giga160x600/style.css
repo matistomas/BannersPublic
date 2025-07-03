@@ -8,7 +8,7 @@ body, html {
     height: 100%;
 }
 #banner {
-    width: 300px;
+    width: 160px;
     height: 600px;
     background: #e60000 url(assets/bg.jpg);
     font-family: Arial, sans-serif;
@@ -27,39 +27,38 @@ body, html {
     background-color: #fff;
     position: absolute;
     width: 100%;
-    height: 44px;
-    top: 21px;
+    height: 103px;
+    top: 10px;
     left: 0;
 }
 .giga img {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 25px;
-    width: 251px;
+    width: 114px;
+    height: 90px;
     animation: gigasance 2s infinite ease-in-out;
 }
 .sticker {
     position: absolute;
-    top: 106px;
-    left: 21px;
-    width: 107px;
-    height: 107px;
-    /*animation: pulse 1s infinite ease-in-out;
-    animation-iteration-count: 3;*/
+    top: 128px;
+    left: 23px;
+    width: 116px;
+    height: 116px;
 }
 .logo {
     position: absolute;
-    bottom: 18px;
-    right: 18px;
-    width: 42px;
-    height: 42px;
+    bottom: 16px;
+    left: 57px;
+    width: 46px;
+    height: 46px;
 }
 .hl1 {
     position: absolute;
-    top: 257px;
-    left: 20px;
-    width: 260px;
-    height: 34px;
+    top: 324px;
+    left: 14px;
+    width: 137px;
+    height: 47px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -68,10 +67,10 @@ body, html {
 }
 .hl2 {
     position: absolute;
-    top: 298px;
-    left: 20px;
-    width: 110px;
-    height: 22px;
+    top: 383px;
+    left: 14px;
+    width: 83px;
+    height: 16px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -79,10 +78,10 @@ body, html {
 }
 .hl3 {
     position: absolute;
-    top: 335px;
-    left: 22px;
-    width: 255px;
-    height: 83px;
+    top: 409px;
+    left: 14px;
+    width: 136px;
+    height: 44px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards, pulse2 1.2s ease-in-out infinite;
@@ -90,10 +89,10 @@ body, html {
 }
 .line {
     position: absolute;
-    top: 320px;
-    left: 49px;
-    width: 80px;
-    height: 2px;
+    top: 400px;
+    left: 36px;
+    width: 65px;
+    height: 1.5px;
     background-color: #fff;
     rotate: -18deg;
     opacity: 0;
@@ -104,18 +103,18 @@ body, html {
 }
 .cta {
     position: absolute;
-    bottom: 17px;
-    left: 18px;
-    width: 85px;
-    height: 35px;
+    bottom: 89px;
+    left: 12px;
+    width: 136px;
+    height: 32px;
     background-color: #fff;
     color: #e60000;
     border-radius: 6px;
 }
 .cta svg {
     position: absolute;
-    top: 11px;
-    left: 17px;
+    top: 10px;
+    left: 43px;
     width: 48px;
     height: 12px;
     fill: #e60000;
