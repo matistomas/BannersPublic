@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "uniqueId": "885b366f84cf26084cc84e6d3be4b6dd",
+    "title": "300x600_main_asset",
+    "description": "",
+    "width": 300,
+    "height": 600,
+    "events": {
+        "enabled": 0,
+        "list": {
+        }
+    },
+    "clicktags": {
+        "clickTAG": "http:\/\/vodafone.cz"
+    },
+    "source": "index.html"
+}

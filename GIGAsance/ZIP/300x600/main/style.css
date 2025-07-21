@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+#banner {
+    width: 300px;
+    height: 600px;
+    background: #e60000 url(assets/bg.jpg);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+#clickTag {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+.giga {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 21px;
+    left: 0;
+}
+.giga img {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 251px;
+    animation: gigasance 2s infinite ease-in-out;
+}
+.sticker {
+    position: absolute;
+    top: 106px;
+    left: 21px;
+    width: 107px;
+    height: 107px;
+    /*animation: pulse 1s infinite ease-in-out;
+    animation-iteration-count: 3;*/
+}
+.logo {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+}
+.hl1 {
+    position: absolute;
+    top: 257px;
+    left: 20px;
+    width: 260px;
+    height: 34px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 50ms;
+    /* animation: copy-in 1000ms cubic-bezier(0, 0, .145, .992) 1000ms, copy-out 500ms linear 28000ms; */
+}
+.hl2 {
+    position: absolute;
+    top: 298px;
+    left: 20px;
+    width: 110px;
+    height: 22px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 150ms;
+}
+.hl3 {
+    position: absolute;
+    top: 335px;
+    left: 22px;
+    width: 255px;
+    height: 83px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards, pulse2 1.2s ease-in-out infinite;
+    animation-delay: 300ms, 1s;
+}
+.line {
+    position: absolute;
+    top: 320px;
+    left: 49px;
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    rotate: -18deg;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: top left;
+    animation: lineScale 0.5s ease-out forwards;
+    animation-delay: 200ms;
+}
+.cta {
+    position: absolute;
+    bottom: 17px;
+    left: 18px;
+    width: 85px;
+    height: 35px;
+    background-color: #fff;
+    color: #e60000;
+    border-radius: 6px;
+}
+.cta svg {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    width: 48px;
+    height: 12px;
+    fill: #e60000;
+}
+#clickTag:hover .cta {
+    background-color: #9c2aa0;
+    animation: btnZoom 0.3s ease-out forwards;
+}
+#clickTag:hover .cta .cls-1 {
+    fill: #fff;
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse2 {
+    0%, 60%, 100% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+}
+
+@keyframes gigasance {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineScale {
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes btnZoom {
+    to {
+        transform: scale(1.1);
+    }
+}
