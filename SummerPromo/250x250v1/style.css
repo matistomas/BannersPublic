@@ -8,8 +8,8 @@ body, html {
     height: 100%;
 }
 #banner {
-    width: 300px;
-    height: 600px;
+    width: 250px;
+    height: 250px;
     background: #e60000 url(assets/bg.jpg);
     font-family: Arial, sans-serif;
     overflow: hidden;
@@ -25,26 +25,32 @@ body, html {
 }
 .sticker {
     position: absolute;
-    top: 207px;
-    left: 23px;
-    width: 110px;
-    height: 110px;
+    top: 118px;
+    left: 15px;
+    width: 85px;
+    height: 85px;
     z-index: 2;
     border-radius: 110px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
+.claim {
+    position: absolute;
+    top: 10px;
+    left: 173px;
+    width: 65px;
+}
 .logo {
     position: absolute;
-    bottom: 21px;
-    right: 21px;
-    width: 41px;
-    height: 41px;
+    bottom: 8px;
+    right: 8px;
+    width: 29px;
+    height: 29px;
 }
 .hl1 {
     position: absolute;
-    top: 22px;
-    left: 21px;
-    width: 256px;
+    top: 11px;
+    left: 17px;
+    width: 117px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -52,9 +58,9 @@ body, html {
 }
 .hl2 {
     position: absolute;
-    top: 52px;
-    left: 23px;
-    width: 213px;
+    top: 36px;
+    left: 15px;
+    width: 134px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -62,56 +68,50 @@ body, html {
 }
 .hl3 {
     position: absolute;
-    top: 89px;
-    left: 25px;
-    width: 140px;
+    top: 64px;
+    left: 16px;
+    width: 103px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards, pulse2 1200ms ease-in-out infinite;
+    animation-delay: 200ms, 1500ms;
+}
+.hl3b {
+    position: absolute;
+    top: 64px;
+    left: 125px;
+    width: 47px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: 200ms;
 }
-.loga1 {
-    background: url(assets/loga1.png);
+.hl4 {
     position: absolute;
-    bottom: 102px;
-    left: 0px;
-    width: 1200px;
-    height: 68px;
-    animation: loga 8000ms linear infinite;
-}
-.loga2 {
-    background: url(assets/loga2.png);
-    position: absolute;
-    bottom: 71px;
-    left: 59px;
-    width: 189px;
-    height: 15px;
-    transform: translate3d(0, 0, 0);
-}
-.line {
-    background: #fff;
-    position: absolute;
-    bottom: 92px;
-    left: 19px;
-    width: 263px;
-    height: 1px;
+    top: 90px;
+    left: 15px;
+    width: 130px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards, pulse3 1200ms ease-in-out infinite;
+    animation-delay: 250ms, 1500ms;
 }
 .cta {
     position: absolute;
-    bottom: 21px;
-    left: 21px;
-    width: 83px;
-    height: 34px;
+    bottom: 9px;
+    left: 15px;
+    width: 85px;
+    height: 29px;
     background-color: #fff;
     color: #e60000;
     border-radius: 6px;
-    animation: pulse 700ms ease-in-out infinite;
+    animation: pulse 1500ms ease-in-out infinite;
 }
 .cta svg {
     position: absolute;
-    top: 11px;
-    left: 18px;
-    width: 47px;
+    top: 8px;
+    left: 10px;
+    width: 66px;
     fill: #e60000;
 }
 #clickTag:hover .cta {
@@ -158,13 +158,9 @@ body, html {
     }
 }
 
+
 @keyframes btnZoom {
     to {
         transform: scale(1.1);
     }
-}
-
-@keyframes loga {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-880px); }
 }
