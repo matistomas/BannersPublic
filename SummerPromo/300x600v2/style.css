@@ -23,24 +23,6 @@ body, html {
     color: inherit;
     position: relative;
 }
-.phone {
-    background: url(assets/phone.png);
-    position: absolute;
-    top: 328px;
-    left: 102px;
-    width: 150px;
-    height: 161px;
-    z-index: 2;
-}
-.sm {
-    background: url(assets/speechmark.svg);
-    position: absolute;
-    top: 197px;
-    left: 45px;
-    width: 223px;
-    height: 272px;
-    z-index: 1;
-}
 .sticker {
     position: absolute;
     top: 200px;
