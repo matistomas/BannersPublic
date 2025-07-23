@@ -50,9 +50,6 @@ body, html {
     z-index: 2;
     border-radius: 70px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    animation: pulse 2000ms ease-in-out infinite;
-    animation-delay: 800ms;
-
 }
 .claim {
     position: absolute;
@@ -118,6 +115,7 @@ body, html {
     background-color: #fff;
     color: #e60000;
     border-radius: 6px;
+    animation: pulse 1500ms ease-in-out infinite;
 }
 .cta svg {
     position: absolute;
