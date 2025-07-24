@@ -59,8 +59,8 @@ body, html {
 .hl2 {
     position: absolute;
     top: 17px;
-    left: 160px;
-    width: 80px;
+    left: 162px;
+    width: 82px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -70,7 +70,7 @@ body, html {
     position: absolute;
     top: 45px;
     left: 18px;
-    width: 205px;
+    width: 210px;
     transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards, pulse2 1200ms ease-in-out infinite;
