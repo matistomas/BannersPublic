@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+#banner {
+    width: 500px;
+    height: 200px;
+    background: #e60000 url(assets/bg.jpg);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+#clickTag {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+.giga {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 41px;
+    top: 7px;
+    left: 0;
+}
+.giga img {
+    position: absolute;
+    top: 11px;
+    left: 113px;
+    width: 255px;
+    animation: gigasance 2s infinite ease-in-out;
+}
+.logo {
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+}
+.hl1 {
+    position: absolute;
+    top: 58px;
+    left: 130px;
+    width: 179px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 50ms;
+}
+.hl2 {
+    position: absolute;
+    top: 107px;
+    left: 130px;
+    width: 72px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 150ms;
+}
+.hl3 {
+    position: absolute;
+    top: 127px;
+    left: 115px;
+    width: 183px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards, pulse2 1.2s ease-in-out infinite;
+    animation-delay: 300ms, 1s;
+}
+.cta {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 74px;
+    height: 31px;
+    background-color: #fff;
+    color: #e60000;
+    border-radius: 8px;
+}
+.cta svg {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 42px;
+    fill: #e60000;
+}
+#clickTag:hover .cta {
+    background-color: #9c2aa0;
+    animation: btnZoom 0.3s ease-out forwards;
+}
+#clickTag:hover .cta .cls-1 {
+    fill: #fff;
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse2 {
+    0%, 60%, 100% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+}
+
+@keyframes gigasance {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineScale {
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes btnZoom {
+    to {
+        transform: scale(1.1);
+    }
+}
