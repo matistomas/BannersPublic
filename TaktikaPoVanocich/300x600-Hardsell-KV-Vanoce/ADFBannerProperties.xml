@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adf>
+  <banner>
+    <details>
+      <uniqueId>28ff57bfc4f912c1338c373999919ee9</uniqueId>
+      <format>Standard</format>
+      <name><![CDATA[VF Ochrana Vanoce RTB 300x600]]></name>
+      <events>1</events>
+    </details>
+    <settings>
+      <responsiveWidth>0</responsiveWidth>
+      <responsiveHeight>0</responsiveHeight>
+      <landingPageTarget>_blank</landingPageTarget>
+    </settings>
+    <assets>
+      <asset>
+        <sourceType>src</sourceType>
+        <fileName>main</fileName>
+        <clickTagNames>
+          <clickTagName><![CDATA[clickTAG]]></clickTagName>
+        </clickTagNames>
+        <eventIds/>
+      </asset>
+    </assets>
+    <bannerClickTags>
+      <bannerClickTag name="clickTAG" displayName="clickTAG"><![CDATA[https://www.vodafone.cz/]]></bannerClickTag>
+    </bannerClickTags>
+    <bannerEvents/>
+    <variables/>
+  </banner>
+</adf>

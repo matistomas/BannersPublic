@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "uniqueId": "28ff57bfc4f912c1338c373999919ee9",
+    "title": "VF Ochrana Vanoce RTB 300x600_main_asset",
+    "description": "",
+    "width": 300,
+    "height": 600,
+    "events": {
+        "enabled": 0,
+        "list": {
+        }
+    },
+    "clicktags": {
+        "clickTAG": "https:\/\/www.vodafone.cz\/"
+    },
+    "source": "VF_ochrana_Vanoce_RTB_300x600_56.html"
+}
