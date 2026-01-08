@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VODAFONE Bannery</title>
+<style>
+html, body {
+  font-family: Arial, sans-serif;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.active, .accordion:hover {
+  background-color: #e60000; 
+  color: #fff;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+iframe {
+  width: 1000px;
+  border: none;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Vodafone bannery VTV</h2>
+
+<button class="accordion">SBN_160x600_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 160px; height: 600px;" data-src="SBN_160x600_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_250x250_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 250px; height: 250px;" data-src="SBN_250x250_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_300x250_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 300px; height: 250px;" data-src="SBN_300x250_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_300x300_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 300px; height: 300px;" data-src="SBN_300x300_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_300x600_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 300px; height: 600px;" data-src="SBN_300x600_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_480x300_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 480px; height: 300px;" data-src="SBN_480x300_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_480x480_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 480px; height: 480px;" data-src="SBN_480x480_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_500x200_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 500px; height: 200px;" data-src="SBN_500x200_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_600x1080_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 600px; height: 1080px;" data-src="SBN_600x1080_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_970x210_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 970px; height: 210px;" data-src="SBN_970x210_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+<button class="accordion">SBN_970x310_CZ_VTV_VTV-Giga-2601^html</button>
+<div class="panel">
+  <iframe style="width: 970px; height: 310px;" data-src="SBN_970x310_CZ_VTV_VTV-Giga-2601^html/index.html" frameborder="0"></iframe>
+</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  function closeAllExcept(openPanel) {
+    for (i = 0; i < acc.length; i++) {
+      var panel = acc[i].nextElementSibling;
+      var iframe = panel.querySelector('iframe');
+      if (panel !== openPanel) {
+        panel.style.maxHeight = null;
+        iframe.src = '';
+        acc[i].classList.remove("active");
+      }
+    }
+  }
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      var panel = this.nextElementSibling;
+      var iframe = panel.querySelector('iframe');
+      var isClosed = panel.style.maxHeight === null || panel.style.maxHeight === "";
+  
+      closeAllExcept(isClosed ? panel : null);
+      
+      if (isClosed) {
+        iframe.src = iframe.getAttribute('data-src');
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.classList.add("active");
+      } else {
+        panel.style.maxHeight = null;
+        this.classList.remove("active");
+      }
+    });
+  }
+  </script>
+
+</body>
+</html>
